@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Contoso Outdoor Company</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header, section {
+            margin: 30px auto;
+            max-width: 900px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.07);
+        }
+        header h1 {
+            text-align: center;
+            font-size: 2.8em;
+            margin-bottom: 0.2em;
+            letter-spacing: 2px;
+        }
+        section h2 {
+            font-size: 2em;
+            margin-top: 0;
+        }
+        .product-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 28px;
+        }
+        .product-card {
+            background: #f7faf7;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            flex: 1 1 220px;
+            max-width: 220px;
+            padding: 18px;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+        }
+        .icon {
+            font-size: 2.6em;
+            margin-bottom: 10px;
+            color: #51986c;
+        }
+        .price {
+            font-weight: bold;
+            color: #1f6039;
+            font-size: 1.15em;
+            display: block;
+            margin-top: 6px;
+        }
+        @media (max-width: 700px) {
+            .product-list {
+                flex-direction: column;
+                align-items: center;
+            }
+            .product-card {
+                max-width: 320px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contoso Outdoor Company</h1>
+    </header>
+
+    <section>
+        <h2>Tents</h2>
+        <p>Unfold adventure with Contoso’s range of tents.</p>
+        <div class="product-list">
+            <div class="product-card">
+                <div class="icon">⛺️</div>
+                <div><strong>TrailMaster X4 Tent</strong></div>
+                <span class="price">$250</span>
+            </div>
+            <div class="product-card">
+                <div class="icon">🏕️</div>
+                <div><strong>Alpine Explorer Tent</strong></div>
+                <span class="price">$300</span>
+            </div>
+            <div class="product-card">
+                <div class="icon">🏠</div>
+                <div><strong>SkyView 2-Person Tent</strong></div>
+                <span class="price">$380</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Backpacks</h2>
+        <p>Our backpack category is equipped to accompany you in every twist and turn.</p>
+        <div class="product-list">
+            <div class="product-card">
+                <div class="icon">🎒</div>
+                <div><strong>Adventurer Pro Backpack</strong></div>
+                <span class="price">$60</span>
+            </div>
+            <div class="product-card">
+                <div class="icon">🧗</div>
+                <div><strong>Summit Climber Backpack</strong></div>
+                <span class="price">$70</span>
+            </div>
+            <div class="product-card">
+                <div class="icon">👜</div>
+                <div><strong>TrailLite Daypack</strong></div>
+                <span class="price">$40</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Hiking Clothing</h2>
+        <p>Step into nature with Contoso Outdoors hiking clothes.</p>
+        <div class="product-list">
+            <div class="product-card">
+                <div class="icon">🧥</div>
+                <div><strong>Summit Breeze Jacket</strong></div>
+                <span class="price">$60</span>
+            </div>
+            <div class="product-card">
+                <div class="icon">👖</div>
+                <div><strong>Trail Blaze Pants</strong></div>
+                <span class="price">$80</span>
+            </div>
+            <div class="product-card">
+                <div class="icon">🥾</div>
+                <div><strong>TREKSTAR Boots</strong></div>
+                <span class="price">$120</span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
